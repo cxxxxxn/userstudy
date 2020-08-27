@@ -1,0 +1,55 @@
+body{
+    font-size: 14px;
+    font-family: 'PingFang SC', tahoma, arial, 'helvetica neue', 'hiragino sans gb', 'microsoft yahei', sans-serif;
+}
+
+span{
+    font-size: 18px;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    width: fit-content;
+    display: inline-block;
+}
+
+em{
+    font-style: inherit;
+    font-weight: 600;
+}
+
+img{
+    width: 100%;
+    min-height: 40%;
+    border: 2px solid #eee;
+    display: none;
+}
+
+.container{
+    width:1000px;
+    height:759.6px;
+    margin: auto auto;
+}
+
+#choice{
+    font-size: 18px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
+input{
+    width: 18px;
+    height: 18px;
+}
+
+#count{
+    color: #999;
+    font-size: 16px; 
+}
+
+#next{
+    width: 200px;
+    height: 30px;
+    position: fixed;
+    bottom: 80px;
+    right: 200px;
+    font-size: 16px;
+}
