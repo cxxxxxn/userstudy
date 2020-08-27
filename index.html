@@ -13,9 +13,115 @@
         <div><span id="count">0 / 90</span></div>
         <img id="mainview" style="margin-top:-4px;" class="ui-widget-content ui-corner-all no_selection"/>
         <div id="choice"></div>
+        <div id = "pre">
+            <h2>Pre-study Questions</h2>
+            <span> <em>01</em> 姓名 </span><br>
+            <input id="name" style="width:300px; height: 30px;">
+            <br><br>
+
+            <span> <em>02</em> 年龄 </span><br>
+            <input id="age" style="width:300px; height: 30px;">
+            <br><br>
+
+            <span> <em>03</em> 性别 </span><br>
+            <input type="radio" name="sex" value="male"/>男
+            <input type="radio" name="sex" value="female"/>女
+            <br><br>
+
+            <span> <em>04</em> 职业 </span><br>
+            <select id="occupation" style="width:300px; height: 36px;">
+                <option>在校学生</option> 
+                <option>政府/机关干部/公务员</option>
+                <option>企业管理者（包括基层及中高层管理者）</option>
+                <option>普通职员（办公室/写字楼工作人员）</option>
+                <option>专业人员（如医生/律师/文体/记者/老师等）</option>
+                <option>普通工人（如工厂工人/体力劳动者等）</option>
+                <option>商业服务业职工（如销售人员/商店职员/服务员等）</option>
+                <option>个体经营者/承包商</option>
+                <option>自由职业者</option>
+                <option>农林牧渔劳动者</option>
+                <option>退休</option>
+                <option>暂无职业</option>
+                <option>其他</option>
+            </select>
+            <br><br>
+
+            <span> <em>05</em> 专业 </span><br>
+            <select id="education" style="width:300px; height: 36px;">
+                <option>计算机科学与技术类</option>
+                <option>电子信息科学类</option>
+                <option>新闻传播学类</option>
+                <option>语言文学类</option>
+                <option>艺术类</option>
+                <option>管理科学与工程类</option> 
+                <option>机械类</option>
+                <option>材料类</option>
+                <option>轻工纺织食品类</option>
+                <option>土建类</option>
+                <option>交通运输类</option>
+                <option>法学类</option>
+                <option>医学类</option>
+                <option>生物医学、制药工程类</option>
+                <option>哲学类</option>
+                <option>心理学类</option>
+                <option>数学类</option>
+                <option>物理学类</option>
+                <option>其他</option>
+            </select>
+            <br><br>
+
+            <span> <em>06</em> 是否具有数据可视化知识？ </span><br>
+            <input type="radio" name="pre6" value="1"/>新手
+            <input type="radio" name="pre6" value="2"/>高阶新手
+            <input type="radio" name="pre6" value="3"/>胜任者
+            <input type="radio" name="pre6" value="4"/>精通者
+            <input type="radio" name="pre6" value="5"/>专家
+            <br><br>
+
+            <span> <em>07</em> 是否有阅读叙事型数据可视化（如数据新闻、数据视频）的经验？ </span><br>
+            <input type="radio" name="pre7" value="1"/>无
+            <input type="radio" name="pre7" value="2"/>一年以内
+            <input type="radio" name="pre7" value="3"/>1-2年
+            <input type="radio" name="pre7" value="4"/>2-5年
+            <input type="radio" name="pre7" value="5"/>5年及以上
+            <br><br>
+
+            <span> <em>08</em> 是否有制作叙事型数据可视化（如数据新闻、数据视频）的经验？ </span><br>
+            <input type="radio" name="pre8" value="1"/>无
+            <input type="radio" name="pre8" value="2"/>一年以内
+            <input type="radio" name="pre8" value="3"/>1-2年
+            <input type="radio" name="pre8" value="4"/>2-5年
+            <input type="radio" name="pre8" value="5"/>5年及以上
+            
+        </div>
         <div id="message">
             <h2>Task1</h2>
             <p>接下来你将看到一张图表，并请回答图表下的问题。回答第一题的时间，将会被记录下来。</p>
+        </div>
+        <div id = "post">
+            <h2>Post-study Questions</h2>
+            <span> <em>01</em> 你喜欢黄色小人么？</span>
+            <div class="tag-container">
+                <div class="tag">非常不认同</div>
+                <div class="tag">非常认同</div>
+            </div>
+            <input type="radio" name="post1" value="1"/>1
+            <input type="radio" name="post1" value="2"/>2
+            <input type="radio" name="post1" value="3"/>3
+            <input type="radio" name="post1" value="4"/>4
+            <input type="radio" name="post1" value="5"/>5
+            <input type="radio" name="post1" value="6"/>6
+            <input type="radio" name="post1" value="7"/>7
+            <br><br>
+            <span> <em>02</em> 你喜欢白色小人么？</span>
+            <div class="tag-container"><div class="tag">非常不认同</div><div class="tag">非常认同</div></div>
+            <input type="radio" name="post2" value="1"/>1
+            <input type="radio" name="post2" value="2"/>2
+            <input type="radio" name="post2" value="3"/>3
+            <input type="radio" name="post2" value="4"/>4
+            <input type="radio" name="post2" value="5"/>5
+            <input type="radio" name="post2" value="6"/>6
+            <input type="radio" name="post2" value="7"/>7
         </div>
         <button id="next">Begin</button>
     </div>

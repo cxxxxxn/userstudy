@@ -19,7 +19,7 @@ em{
 img{
     width: 100%;
     min-height: 40%;
-    border: 2px solid #eee;
+    /* border: 2px solid #eee; */
     display: none;
 }
 
@@ -29,9 +29,9 @@ img{
     margin: auto auto;
 }
 
-#choice{
+#choice, #pre, #post{
     font-size: 18px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* text-align: center; */
 }
 
@@ -43,13 +43,42 @@ input{
 #count{
     color: #999;
     font-size: 16px; 
+    display: none;
 }
 
 #next{
     width: 200px;
     height: 30px;
-    position: fixed;
+    /* position: fixed; */
     bottom: 80px;
     right: 200px;
     font-size: 16px;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tag-container{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    margin-bottom: 10px;
+    margin-top: 4px; 
+}
+
+.tag {
+    font-size: 12px; 
+    background: #eee;
+    border-radius: 5px;
+    padding: 3px; 
+    padding-left: 6px;
+    padding-right: 6px; 
+}
+
+#post{
+    display: none;
+}
+
+#message{
+    display: none;
 }
