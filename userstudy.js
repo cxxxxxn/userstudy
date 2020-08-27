@@ -27,7 +27,7 @@ function addRow(elements){
 }
 
 function initTasks(){
-    for(let i = 1; i <= 1; i++){
+    for(let i = 1; i <= 45; i++){
         taskArr.push(taskType + "-" + i);
     }
 }
