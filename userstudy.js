@@ -1,3 +1,5 @@
+const path = 'https://cxxxxxn.github.io/userstudy/img/';
+///img/
 window.onload = function(){
     document.getElementById("next").onclick = next;
     initTasks();
@@ -138,7 +140,7 @@ function showNextTask(){
         let rand = Math.floor(Math.random() * taskArr.length); 
         let nextTask = taskArr.splice(rand, 1)[0];
         currentTask = nextTask;
-        document.getElementById('mainview').src = "/img/" + nextTask + ".png";
+        document.getElementById('mainview').src = path + nextTask + ".png";
         document.getElementById('mainview').style.display = 'inherit';
         document.getElementById('choice').innerHTML = '';
         const left = taskType == "task1" ? 45 - taskArr.length :90 - taskArr.length;
