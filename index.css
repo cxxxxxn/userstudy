@@ -18,26 +18,31 @@ em{
 
 img{
     width: 100%;
-    min-height: 40%;
-    /* border: 2px solid #eee; */
+    min-height: 405px;
     display: none;
 }
 
 .container{
     width:1000px;
-    height:759.6px;
+    min-height:685px;
     margin: auto auto;
 }
 
 #choice, #pre, #post{
     font-size: 18px;
-    /* margin-bottom: 10px; */
-    /* text-align: center; */
+}
+
+#choice{
+    margin-left: 150px;
 }
 
 input{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+}
+
+label{
+    font-size: 20px;
 }
 
 #count{
@@ -49,13 +54,11 @@ input{
 #next{
     width: 200px;
     height: 30px;
-    /* position: fixed; */
-    bottom: 80px;
-    right: 200px;
     font-size: 16px;
     float: right;
+    margin-right: 140px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .tag-container{
@@ -80,5 +83,52 @@ input{
 }
 
 #message{
+    display: none;
+}
+
+.checkbox{
+    border: 1px solid #999;
+}
+
+.checkbox:hover{
+    background: rgba(0, 200, 0, 0.2);
+}
+
+.choosed, .choosed:hover{
+    background: url(./yes.png) center center no-repeat;
+    background-size: contain;
+    background-size: 80px 80px;
+}
+
+.choosed:hover{
+    background: url(./yes.png)  rgba(0, 200, 0, 0.2) center center no-repeat;
+    background-size: 80px 80px;
+}
+
+.checkbox-disable{
+    border: 1px solid #999;
+    background: url(./disable.png) #eee center center no-repeat;
+    background-size: 50px 50px;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+td,th{
+    padding: 0;
+}
+
+th{
+    height: 50px;
+}
+
+td{
+    height: 100px;
+    width: 100px;
+}
+
+#task2{
     display: none;
 }

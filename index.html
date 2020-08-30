@@ -4,8 +4,8 @@
 <head>
     <title>User study</title>
     <link type="text/css" rel="stylesheet" href="index.css" />
-    <script type="text/javascript" src="lib/FileSaver.min.js"></script>
-    <script type="text/javascript" src="userstudy.js"></script>
+    <script type="text/javascript" src="./lib/FileSaver.min.js"></script>
+    <script type="text/javascript" src="./userstudy.js"></script>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
             <br><br>
 
             <span> <em>03</em> 性别 </span><br>
-            <input type="radio" name="sex" value="male"/>男
-            <input type="radio" name="sex" value="female"/>女
+            <input type="radio" name="sex" value="male" id="male"/><label for="male">男</label>    
+            <input type="radio" name="sex" value="female" id="female"/><label for="female">女</label>  
             <br><br>
 
             <span> <em>04</em> 职业 </span><br>
@@ -71,14 +71,14 @@
             <br><br>
 
             <span> <em>06</em> 是否具有数据可视化知识？ </span><br>
-            <input type="radio" name="pre6" value="1"/>新手
-            <input type="radio" name="pre6" value="2"/>高阶新手
-            <input type="radio" name="pre6" value="3"/>胜任者
-            <input type="radio" name="pre6" value="4"/>精通者
-            <input type="radio" name="pre6" value="5"/>专家
+            <input type="radio" name="pre6" value="1" id="pre6-1"/><label for="pre6-1">新手</label> 
+            <input type="radio" name="pre6" value="2" id="pre6-2"/><label for="pre6-2">高阶新手</label> 
+            <input type="radio" name="pre6" value="3" id="pre6-3"/><label for="pre6-3">胜任者</label> 
+            <input type="radio" name="pre6" value="4" id="pre6-4"/><label for="pre6-4">精通者</label> 
+            <input type="radio" name="pre6" value="5" id="pre6-5"/><label for="pre6-5">专家</label> 
             <br><br>
 
-            <span> <em>07</em> 是否有阅读叙事型数据可视化（如数据新闻、数据视频）的经验？ </span><br>
+            <!-- <span> <em>07</em> 是否有阅读叙事型数据可视化（如数据新闻、数据视频）的经验？ </span><br>
             <input type="radio" name="pre7" value="1"/>无
             <input type="radio" name="pre7" value="2"/>一年以内
             <input type="radio" name="pre7" value="3"/>1-2年
@@ -91,40 +91,65 @@
             <input type="radio" name="pre8" value="2"/>一年以内
             <input type="radio" name="pre8" value="3"/>1-2年
             <input type="radio" name="pre8" value="4"/>2-5年
-            <input type="radio" name="pre8" value="5"/>5年及以上
+            <input type="radio" name="pre8" value="5"/>5年及以上 -->
             
         </div>
         <div id="message">
             <h2>Task1</h2>
-            <p>接下来你将看到一张图表，并请回答图表下的问题。回答第一题的时间，将会被记录下来。</p>
+            <p>接下来，你将看到一张可视化图表，并且需要回答一道题目（答题时间会被记录），</p>
+            <p>接着再对回答的自信程度，图表的有趣程度，小人的辅助程度进行打分。</p>
         </div>
-        <div id = "post">
-            <h2>Post-study Questions</h2>
-            <span> <em>01</em> 你喜欢黄色小人么？</span>
-            <div class="tag-container">
-                <div class="tag">非常不认同</div>
-                <div class="tag">非常认同</div>
-            </div>
-            <input type="radio" name="post1" value="1"/>1
-            <input type="radio" name="post1" value="2"/>2
-            <input type="radio" name="post1" value="3"/>3
-            <input type="radio" name="post1" value="4"/>4
-            <input type="radio" name="post1" value="5"/>5
-            <input type="radio" name="post1" value="6"/>6
-            <input type="radio" name="post1" value="7"/>7
-            <br><br>
-            <span> <em>02</em> 你喜欢白色小人么？</span>
-            <div class="tag-container"><div class="tag">非常不认同</div><div class="tag">非常认同</div></div>
-            <input type="radio" name="post2" value="1"/>1
-            <input type="radio" name="post2" value="2"/>2
-            <input type="radio" name="post2" value="3"/>3
-            <input type="radio" name="post2" value="4"/>4
-            <input type="radio" name="post2" value="5"/>5
-            <input type="radio" name="post2" value="6"/>6
-            <input type="radio" name="post2" value="7"/>7
+        <div id="task2">
+            <table>
+                <tr>
+                    <th> </th>
+                    <th>Difference</th>
+                    <th>Trend</th>
+                    <th>Distribution</th>
+                    <th>Categorization</th>
+                    <th>Value</th>
+                    <th>Proportion</th>
+                </tr>
+                <tr>
+                    <td>Bar chart</td>
+                    <td class="checkbox" name="1" value="1"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Line chart</td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox-disable"></td>
+                </tr>
+                <tr>
+                    <td>Area chart</td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox-disable"></td>
+                </tr>
+                <tr>
+                    <td>Pie chart</td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox"></td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox-disable"></td>
+                    <td class="checkbox"></td>
+                </tr>
+              </table>
         </div>
-        <button id="next">Begin</button>
     </div>
+    <button id="next">Begin</button>
 </body>
 
 </html>
